@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <script type="text/javascript">
+    var name;
+    var email;
+    function do_checking()
+    {
+        name = document.getElementById("name").value;
+        email = document.getElementById("email").value;
+        if(!name || !email)
+        {
+            alert("Please input the necessary information");
+        }
+    }
+    </script>
+
+    <style>
+        #name{
+            position:relative;
+            top:10px;
+            left:50px;
+            width:210px;
+        }
+        #email{
+            position:relative;
+            top:30px;
+            left:50px;
+            width:210px;
+        }
+        #submit{
+            position:relative;
+            top:50px;
+            left:50px;
+            width:210px;
+        }
+        #getCode:hover,#submit:hover{
+            cursor:pointer;
+            background-color:#666;
+            color:#FFF;
+        }
+        input,button{
+            border:1px solid #999;
+            height:40px;
+            color:#666;
+        }
+        .h1{
+            position:relative;
+            top:10px;
+            left:130px;
+            color:#666;
+        }
+        .box{
+            top:20%;
+            left:33%;
+            height:300px;
+            width:300px;
+            border:dashed 2px #666;
+            position:absolute;
+        }
+        .warning{
+            position:absolute;
+            left:452px;
+            top:522px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <h1 class="h1">Lab</h1>
+    <form action="#" method="post">
+    <div>
+        <input type="text" id="name" name="name" placeholder="input your name">
+    </div>
+    <div>
+        <input type="text" id="email" name="email" placeholder="input your E-mail">
+    </div>
+    <div>
+        <button type="submit" id="submit" onclick="do_checking()">Submit</button>
+    </div>
+    </form>
+
+</div>
+</body>
+</html>
