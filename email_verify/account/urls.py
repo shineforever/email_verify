@@ -11,7 +11,7 @@ Created on: 2016-11-29 17:24
 
 urlpatterns = patterns('account.views',
     url(r'^register/$', 'register', name='account.views.register'),
-    url(r'^do_verificatin/$', 'do_verificatin', name='account.views.do_verificatin'),
+    url(r'^do_verificatin/', 'do_verificatin', name='account.views.do_verificatin'),
     url(r'^success/$', 'success', name='account.views.success'),
     url(r'^fail/$', 'fail', name='account.views.fail'),
     url(r'^wait_verifyed/$', 'wait_verifyed', name='account.views.wait_verifyed'),
