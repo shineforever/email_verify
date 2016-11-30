@@ -30,12 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-API_USER = 'shine_forever_test_zFZOBK' # input your apt_user
-API_KEY = 'su9zZf98O0ooT5i8' # input your spi_key
-url = "http://www.sendcloud.net/webapi/mail.send_template.json"
-base_link = "http:127.0.0.1:8000/account/do_verificatin?"
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -86,8 +80,8 @@ WSGI_APPLICATION = 'email_verify.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '127.0.0.1',
-        'PORT': 3306,
+        'HOST': '192.168.2.42',
+        'PORT': 33066,
         'NAME': 'email_verify',
         'USER': 'root',
         'PASSWORD': '123456',
